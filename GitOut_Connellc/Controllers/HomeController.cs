@@ -28,5 +28,12 @@ namespace GitOut_Connellc.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult MyName()
+        {
+            ViewData["MyName"] = "Name: Lai Connelly";
+
+            return View();
+        }
     }
 }
